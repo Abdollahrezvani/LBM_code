@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "LBSolver", "LBSolver\LBSolver.vfproj", "{06E75280-6399-4EF2-9C9B-0FD70A3B5AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06E75280-6399-4EF2-9C9B-0FD70A3B5AE7}.Debug|x86.ActiveCfg = Debug|Win32
+		{06E75280-6399-4EF2-9C9B-0FD70A3B5AE7}.Debug|x86.Build.0 = Debug|Win32
+		{06E75280-6399-4EF2-9C9B-0FD70A3B5AE7}.Release|x86.ActiveCfg = Release|Win32
+		{06E75280-6399-4EF2-9C9B-0FD70A3B5AE7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43934C6A-4504-4C1C-B69B-ED530E0D4947}
+	EndGlobalSection
+EndGlobal
