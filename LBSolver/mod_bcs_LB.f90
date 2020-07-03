@@ -41,29 +41,29 @@ Subroutine Periodic_flow
 End subroutine Periodic_flow  
 
 !---------------------------------------------------------------------------!
-! Subroutine: Pressure_bound
+! Subroutine: Pressure_bc
 !
-!> @details Implementing the pressure boundary condition
+!> @details Implementing the imposing pressure boundary condition
 !
 !> @author Duc Kien Tran
 !> @date 02/07/2020
 !---------------------------------------------------------------------------! 
 
-Subroutine Pressure_bound
+Subroutine Pressure_bc
 
-End subroutine Pressure_bound
+End subroutine Pressure_bc
 
 !---------------------------------------------------------------------------!
-! Subroutine: Pressure_bound
+! Subroutine: Pressure_bc
 !
-!> @details Implementing the pressure boundary condition
+!> @details Implementing the imposing velocity boundary condition
 !
 !> @author Duc Kien Tran
 !> @date 02/07/2020
 !---------------------------------------------------------------------------! 
 
-Subroutine Velocity_bound
+Subroutine Velocity_bc
 
-End subroutine Velocity_bound
+End subroutine Velocity_bc
 
 end module LB_BCs

@@ -1,15 +1,21 @@
 !---------------------------------------------------------------------------!
 ! LBDEM Developed by Duc Kien Tran, DSI, LLC.
 !---------------------------------------------------------------------------!
-! Module: Read_LB
 !
-!> @details Reading the input files
+!> @details The main program of the LB part
 !
 !> @author Duc Kien Tran
 !> @date 02/07/2020
 !---------------------------------------------------------------------------!
   
-Module Read_LB
-  Implicit none
+Program LB_Solver
+  Use var_global
+  Use mod_LB
+  Use Read_LB
   
-End module Read_LB
+  Implicit none
+    Integer :: iter
+    
+    call input_fluid
+  
+End program LB_Solver
