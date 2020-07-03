@@ -1,9 +1,20 @@
-module LBM
-  implicit none
+!---------------------------------------------------------------------------!
+! LBDEM Developed by Duc Kien Tran, DSI, LLC.
+!---------------------------------------------------------------------------!
+! Module: LBM
+!
+!> @details Containing subroutine for solving LB Equations
+!
+!> @author Duc Kien Tran
+!> @date 02/07/2020
+!---------------------------------------------------------------------------!
   
-  contains
+Module LBM
+  Implicit none
   
-  subroutine init_fluid
-  end subroutine init_fluid
+  Contains
   
-end module LBM
+  Subroutine init_fluid
+  End subroutine init_fluid
+  
+End module LBM
