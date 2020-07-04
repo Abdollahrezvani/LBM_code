@@ -17,5 +17,6 @@ Program LB_Solver
     Integer :: iter
     
     call input_fluid
+    call init_fluid
   
 End program LB_Solver
