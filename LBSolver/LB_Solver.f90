@@ -18,5 +18,6 @@ Program LB_Solver
     
     call input_fluid
     call init_fluid
-  
+    call streaming
+    
 End program LB_Solver

@@ -34,6 +34,8 @@ Module Read_LB
     Read(1,*)
     Read(1,*) rhoin, rhoout
     
+    nx = nx + 2
+    ny = ny + 2
   End subroutine input_fluid
 
 !---------------------------------------------------------------------------!

@@ -5,8 +5,8 @@ module var_global
   integer, parameter :: rk4 = 4    !< real(rk4) for single precision
   integer (kind = rk4), parameter :: nv  = 9    !< Number of mirco velocity components
   
-  integer (kind = rk4) :: nx      !< Number of nodes along x direction
-  integer (kind = rk4) :: ny      !< Number of nodes along y direction
+  integer (kind = rk4) :: nx       !< Number of nodes along x direction
+  integer (kind = rk4) :: ny       !< Number of nodes along y direction
   integer (kind = rk4) :: nstep    !< Number of time steps
   
   Real (kind = rk4)  :: tau        !< Relaxation time

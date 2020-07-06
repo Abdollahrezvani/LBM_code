@@ -37,6 +37,7 @@ Module mod_LB
   Subroutine init_fluid
   
     integer :: ix, iy, iv
+    
     allocate(f (nv,nx,ny))
     allocate(fc(nv,nx,ny))
     allocate(ux(nx,ny))
@@ -82,8 +83,8 @@ Module mod_LB
     Real (kind = rk4) :: unx, uny, rhon
     Real (kind = rk4) :: udotu, cdotu, feq
     
-    do iy = 2, ny+1
-      do ix = 2, nx+1
+    do iy = 2, ny-1
+      do ix = 2, nx-1
         unx  = ux (ix,iy)
         uny  = uy (ix,iy)
         rhon = rho(ix,iy)
@@ -108,7 +109,19 @@ Module mod_LB
 !> @date 02/07/2020
 !---------------------------------------------------------------------------! 
   Subroutine streaming
-  
+    
+    Integer :: ix, iy, iv, x, y
+    
+    do iv = 1, nv
+      x = int(cx(iv))
+      y = int(cy(iv))
+      do iy = 2, ny-1
+        do ix = 2, nx-1
+          f(iv,ix,iy) = f(iv,ix-x,iy-y)
+        end do
+      end do
+    end do
+    
   End subroutine streaming 
    
 !---------------------------------------------------------------------------!
@@ -123,8 +136,8 @@ Module mod_LB
     
     Integer :: ix, iy, iv
         
-    do iy = 2, ny+1
-      do ix = 2, nx+1
+    do iy = 2, ny-1
+      do ix = 2, nx-1
         rho(ix,iy) = f(1,ix,iy)
         ux (ix,iy) = 0.
         uy (ix,iy) = 0.
