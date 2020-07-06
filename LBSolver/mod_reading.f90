@@ -9,7 +9,7 @@
 !> @date 02/07/2020
 !---------------------------------------------------------------------------!
   
-Module Read_LB
+Module read_LB
   Use var_global
   Implicit none
   
@@ -51,4 +51,4 @@ Module Read_LB
     Write(*,'(A)')'Reading the main control file: dem.inp' 
 
   End subroutine input_solid
-End module Read_LB
+End module read_LB

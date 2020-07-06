@@ -9,7 +9,17 @@
 !> @date 02/07/2020
 !---------------------------------------------------------------------------!
 
-Module Print_LB
+Module print_LB
   Implicit none
 
-End module Print_LB
+  Contains
+  Subroutine printres()
+    Integer :: ix, iy, im
+    
+    im = nx/2 + 1
+    do iy = 2, ny=1
+      
+    end do
+  End subroutine printres
+  
+End module print_LB

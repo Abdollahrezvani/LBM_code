@@ -14,8 +14,6 @@ Module mod_LB
   
   Implicit none  
 
-  Real    (kind = rk4), allocatable :: f (:,:,:)    !< Distribution function
-  Real    (kind = rk4), allocatable :: fc(:,:,:)    !< Post-colision distribution function
   Real    (kind = rk4), allocatable :: ux  (:,:)    !< Fluid velocity components in x direction
   Real    (kind = rk4), allocatable :: uy  (:,:)    !< Fluid velocity components in y direction
   Real    (kind = rk4), allocatable :: rho (:,:)    !< Fluid density

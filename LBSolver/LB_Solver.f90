@@ -11,13 +11,19 @@
 Program LB_Solver
   Use var_global
   Use mod_LB
-  Use Read_LB
+  Use read_LB
+  Use mod_BCs
   
   Implicit none
     Integer :: iter
     
     call input_fluid
     call init_fluid
-    call streaming
+    do iter = 1, nstep
+      call collisions
+      call streaming
+      call bounce_back
+      call pressure_bc
+    end do
     
 End program LB_Solver
